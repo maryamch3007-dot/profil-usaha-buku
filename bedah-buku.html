@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedah Buku | Toko Buku Maryam dan Savryna</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f3e5d8, #e6ccb2);
+    color:#4e342e;
+}
+
+/* ===== NAVBAR ESTETIK ===== */
+nav{
+    background:#4e342e;
+    padding:18px;
+    text-align:center;
+    border-radius:40px;
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffcc80;
+}
+
+/* ===== JUDUL ===== */
+h1{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+/* ===== CONTAINER GRID ===== */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:30px;
+    padding-bottom:60px;
+}
+
+/* ===== CARD ===== */
+.artikel{
+    background:white;
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+    text-align:center;
+}
+
+.artikel:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ===== FOTO TIDAK TERPOTONG ===== */
+.sampul{
+    max-width:170px;
+    width:100%;
+    height:auto;
+    margin:15px auto;
+    display:block;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== PENULIS ===== */
+.penulis{
+    font-style:italic;
+    font-size:14px;
+    margin-bottom:10px;
+    color:#6d4c41;
+}
+
+/* ===== QUOTE ===== */
+blockquote{
+    font-style:italic;
+    font-size:14px;
+    margin-top:12px;
+    color:#8d6e63;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#4e342e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+<a href="kontak.html">Kontak</a>
+<a href="event.html">Event</a>
+</nav>
+
+<h1>Bedah Buku Pilihan Kami 🤎</h1>
+
+<div class="container">
+
+<div class="artikel">
+<h3>Negeri 5 Menara</h3>
+<p class="penulis">Ahmad Fuadi</p>
+<img src="images/Negeri 5 Menara.jfif" class="sampul">
+<blockquote>"Man Jadda Wajada."</blockquote>
+</div>
+
+<div class="artikel">
+<h3>Bulan</h3>
+<p class="penulis">Tere Liye</p>
+<img src="images/Bulan.jpg" class="sampul">
+<blockquote>"Keberanian tetap melangkah meski takut."</blockquote>
+</div>
+
+<div class="artikel">
+<h3>Hello</h3>
+<p class="penulis">Tere Liye</p>
+<img src="images/Hello.jfif" class="sampul">
+<blockquote>"Satu kata hello bisa memulai segalanya."</blockquote>
+</div>
+
+<div class="artikel">
+<h3>Cinderella</h3>
+<p class="penulis">Dinara Mirtalipova</p>
+<img src="images/Cinderella.jfif" class="sampul">
+<blockquote>"Kebaikan hati membawa kebahagiaan."</blockquote>
+</div>
+
+<div class="artikel">
+<h3>Dulce de Leche</h3>
+<p class="penulis">Josephine Caminos Oria</p>
+<img src="images/Dulce de Leche.jfif" class="sampul">
+<blockquote>"Memasak adalah kenangan."</blockquote>
+</div>
+
+<div class="artikel">
+<h3>Matematika</h3>
+<p class="penulis">Department of School Education</p>
+<img src="images/Matematika.jfif" class="sampul">
+<blockquote>"Belajar logika dengan menyenangkan."</blockquote>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Toko Buku Maryam dan Savryna</p>
+</footer>
+
+</body>
+</html>

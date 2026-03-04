@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Usaha Buku</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f5eee6, #e8d8c3);
+    color: #4b2e2e;
+}
+
+/* HEADER */
+.banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===== NAVBAR STYLE EVENT ===== */
+nav{
+    background:#3e2723;
+    padding:22px 0;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:1px;
+    position:relative;
+    transition:0.3s;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#ffcc80;
+    left:50%;
+    bottom:-8px;
+    transform:translateX(-50%);
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#ffcc80;
+}
+
+/* MAIN */
+main {
+    padding: 60px 12%;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.section-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.section-box:hover{
+    transform: translateY(-6px);
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/ChatGPT Image Feb 25, 2026, 10_24_19 AM.png" 
+    alt="Header Toko Buku" class="banner">
+</header>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+<a href="kontak.html">Kontak</a>
+<a href="event.html">Event</a>
+</nav>
+
+<main>
+
+<div class="section-box">
+    <h1>Selamat Datang di Usaha Buku Maryam dan Savryna</h1>
+
+    <p>
+        Website ini berisi informasi tentang produk buku, bedah buku,
+        dan testimoni pelanggan.
+    </p>
+</div>
+
+<div class="section-box">
+    <h2>Jenis-Jenis Buku yang Kami Jual</h2>
+
+    <p>
+        Kami menyediakan berbagai jenis buku yang cocok untuk semua kalangan,
+        mulai dari anak-anak hingga orang dewasa.
+        Berikut beberapa kategori utama yang tersedia di Toko Buku kami:
+    </p>
+
+    <ul>
+        <li><strong>Buku Pelajaran Sekolah:</strong> Matematika, Bahasa Indonesia, IPA, IPS, dan lainnya untuk tingkat SD, SMP, hingga SMA.</li>
+
+        <li><strong>Novel Fiksi:</strong> Novel remaja, cerita cinta, fiksi ilmiah, dan misteri dari penulis lokal maupun internasional.</li>
+
+        <li><strong>Buku Motivasi dan Pengembangan Diri:</strong> Buku-buku inspiratif seperti <em>Atomic Habits</em>, <em>Berani Tidak Disukai</em>, dan lainnya.</li>
+
+        <li><strong>Buku Anak-Anak:</strong> Buku cerita bergambar, buku aktivitas, dan edukasi dini seperti <em>Belajar Huruf & Angka</em>.</li>
+
+        <li><strong>Buku Referensi Umum:</strong> Ensiklopedia, kamus, buku pengetahuan umum, dan buku-buku hobi seperti memasak atau berkebun.</li>
+    </ul>
+</div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Toko Buku Maryam dan Savryna</p>
+</footer>
+
+</body>
+</html>

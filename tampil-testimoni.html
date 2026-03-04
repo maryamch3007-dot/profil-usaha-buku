@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimoni Pembeli | Toko Buku Maryam & Savryna</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f5eee6, #e8d8c3);
+    color: #4b2e2e;
+}
+
+/* ===== NAVBAR MODERN (SAMA SEPERTI KONTAK) ===== */
+nav{
+    background:#4e342e;
+    padding:18px;
+    text-align:center;
+    border-radius:40px;
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffcc80;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 32px;
+    color: #5c3a21;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* MAIN */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TESTIMONI BOX */
+.testimoni-box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.testimoni-box:hover {
+    transform: translateY(-5px);
+}
+
+.testimoni-box p {
+    margin-bottom: 8px;
+}
+
+/* BUTTON */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b2e2e;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background:#4e342e;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+<a href="kontak.html">Kontak</a>
+<a href="event.html">Event</a>
+</nav>
+
+<h1>Testimoni Pembeli</h1>
+<h2>Apa Kata Mereka Tentang Buku Kami 🤎</h2>
+
+<main>
+<div id="daftarTestimoni"></div>
+
+<button id="hapusSemua">Hapus Semua Testimoni</button>
+</main>
+
+<footer>
+<p>&copy; 2026 Toko Buku Maryam dan Savryna</p>
+</footer>
+
+<script>
+const container = document.getElementById('daftarTestimoni');
+const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
+
+if (testimoniList.length === 0) {
+    container.innerHTML = "<p style='text-align:center;'>Belum ada testimoni.</p>";
+} else {
+    testimoniList.forEach((t) => {
+        const el = document.createElement('div');
+        el.className = 'testimoni-box';
+        el.innerHTML = `
+        <p><strong>Nama:</strong> ${t.nama}</p>
+        <p><strong>Asal:</strong> ${t.Asal}</p>
+        <p><strong>Email:</strong> ${t.email}</p>
+        <p><strong>Judul Buku:</strong> ${t.Judul}</p>
+        <p><strong>Rating:</strong> ${t.Rating}/5</p>
+        <p><strong>Testimoni:</strong> ${t.pesan}</p>
+        `;
+        container.appendChild(el);
+    });
+}
+
+document.getElementById('hapusSemua').addEventListener("click", function() {
+    const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?");
+    if (konfirmasi) {
+        localStorage.removeItem("testimoniList");
+        location.reload();
+    }
+});
+</script>
+
+</body>
+</html>

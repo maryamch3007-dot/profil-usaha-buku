@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event & Promo | Toko Buku Maryam dan Savryna</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3e5d8, #e6ccb2);
+    color:#4e342e;
+}
+
+/* ===== NAVBAR MODERN ===== */
+nav{
+    background:#4e342e;
+    padding:18px;
+    text-align:center;
+    border-radius:40px;
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffcc80;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:30px 20px 50px;
+}
+
+header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#6d4c41;
+    font-size:16px;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:35px;
+    padding-bottom:70px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* BADGE */
+.badge{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#6d4c41;
+    color:white;
+    padding:7px 16px;
+    border-radius:20px;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+/* TEXT */
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    margin-right:8px;
+    padding:10px 18px;
+    background:#6d4c41;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.btn:hover{
+    background:#3e2723;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:#4e342e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+<a href="kontak.html">Kontak</a>
+<a href="event.html">Event</a>
+</nav>
+
+<header>
+<h1>Event & Promo Spesial 🤎</h1>
+<p>Temukan berbagai pameran buku dan diskon menarik dari kami</p>
+</header>
+
+<div class="container">
+
+<!-- EVENT PAMERAN -->
+<div class="card">
+<span class="badge">Pameran</span>
+<h2>Pameran Buku Nasional 2026</h2>
+<p><strong>📍 Lokasi:</strong> Surabaya Convention Hall</p>
+<p><strong>📅 Tanggal:</strong> 15 - 20 Juli 2026</p>
+<p>
+Nikmati pameran buku terbesar dengan ribuan koleksi buku terbaru,
+meet & greet penulis, serta diskon spesial hingga 50%.
+</p>
+<a href="kontak.html" class="btn">Daftar Sekarang</a>
+<a href="testimoni.html" class="btn">Tulis Testimoni</a>
+</div>
+
+<!-- DISKON -->
+<div class="card">
+<span class="badge">Diskon</span>
+<h2>Promo Back To School</h2>
+<p><strong>🎉 Diskon:</strong> Hingga 40%</p>
+<p><strong>📅 Periode:</strong> 1 - 31 Agustus 2026</p>
+<p>
+Dapatkan potongan harga untuk buku pelajaran, novel remaja,
+dan alat tulis pilihan. Promo terbatas!
+</p>
+<a href="produk.html" class="btn">Lihat Promo</a>
+<a href="tampil-testimoni.html" class="btn">Lihat Testimoni</a>
+</div>
+
+<!-- EVENT BEDAH BUKU -->
+<div class="card">
+<span class="badge">Bedah Buku</span>
+<h2>Talkshow & Bedah Buku Inspiratif</h2>
+<p><strong>🎤 Narasumber:</strong> Penulis Nasional</p>
+<p><strong>📅 Tanggal:</strong> 5 September 2026</p>
+<p>
+Diskusi interaktif, sesi tanya jawab, dan penandatanganan buku
+langsung bersama penulis favorit Anda.
+</p>
+<a href="kontak.html" class="btn">Reservasi Tempat</a>
+<a href="tampil-testimoni.html" class="btn">Testimoni Peserta</a>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Toko Buku Maryam dan Savryna</p>
+</footer>
+
+</body>
+</html>

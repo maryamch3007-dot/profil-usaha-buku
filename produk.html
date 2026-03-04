@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar Produk Buku</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f5eee6, #e8d8c3);
+    color:#4b2e2e;
+}
+
+/* ===== NAVBAR MODERN ROUNDED ===== */
+nav{
+    display:flex;
+    justify-content:center;
+    margin:30px auto;
+}
+
+nav .nav-container{
+    background:#3e2723;
+    padding:15px 40px;
+    border-radius:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:0.5px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* hover effect */
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#ffcc80;
+    left:50%;
+    bottom:-6px;
+    transform:translateX(-50%);
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#ffcc80;
+}
+
+/* JUDUL */
+h1{
+    text-align:center;
+    margin:40px 0 30px 0;
+    font-size:32px;
+    font-weight:700;
+}
+
+/* GRID PRODUK */
+.daftar-produk{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:30px;
+    padding:30px 60px 60px 60px;
+}
+
+/* CARD PRODUK */
+.produk{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(111,78,55,0.2);
+    text-align:center;
+    transition:0.3s;
+}
+
+.produk:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(111,78,55,0.35);
+}
+
+/* GAMBAR */
+.produk img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* NAMA */
+.produk h2{
+    margin-bottom:10px;
+    color:#6f4e37;
+}
+
+/* HARGA */
+.harga{
+    font-weight:bold;
+    color:#8b5e3c;
+    margin-bottom:10px;
+}
+
+/* DESKRIPSI */
+.deskripsi{
+    font-size:14px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* TOMBOL */
+.kembali{
+    display:block;
+    width:220px;
+    margin:30px auto 60px auto;
+    padding:12px;
+    text-align:center;
+    background:#8b5e3c;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.kembali:hover{
+    background:#a9745b;
+    transform:translateY(-3px);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<a href="index.html">Beranda</a>
+<a href="produk.html">Produk</a>
+<a href="bedah-buku.html">Bedah Buku</a>
+<a href="testimoni.html">Testimoni</a>
+<a href="tampil-testimoni.html">Testimoni Pembeli</a>
+<a href="kontak.html">Kontak</a>
+<a href="event.html">Event</a>
+</div>
+</nav>
+
+<h1>📚 Daftar Produk Buku</h1>
+
+<section class="daftar-produk">
+
+<div class="produk">
+<img src="images/Hello.jfif" alt="Hello">
+<h2>Hello</h2>
+<p class="harga">Rp189.900</p>
+<p class="deskripsi">
+Novel penuh makna tentang perpisahan dan proses berdamai dengan diri sendiri. 
+Mengajak pembaca menyapa masa lalu, menerima kenyataan, dan melangkah ke masa depan dengan hati yang lebih tenang.
+</p>
+</div>
+
+<div class="produk">
+<img src="images/Bulan.jpg" alt="Bulan">
+<h2>Bulan</h2>
+<p class="harga">Rp199.900</p>
+<p class="deskripsi">
+Petualangan fantasi Raib, Seli, dan Ali di Klan Bulan. 
+Cerita penuh aksi, persahabatan, dan pesan moral tentang keberanian dan tanggung jawab.
+</p>
+</div>
+
+<div class="produk">
+<img src="images/Matematika.jfif" alt="Matematika">
+<h2>Matematika</h2>
+<p class="harga">Rp99.999</p>
+<p class="deskripsi">
+Panduan belajar sistematis dari dasar hingga lanjutan. 
+Disusun runtut dengan teori, contoh soal, dan latihan untuk melatih logika dan analisis.
+</p>
+</div>
+
+<div class="produk">
+<img src="images/Negeri 5 Menara.jfif" alt="Negeri 5 Menara">
+<h2>Negeri 5 Menara</h2>
+<p class="harga">Rp299.900</p>
+<p class="deskripsi">
+Novel inspiratif tentang perjuangan dan mimpi. 
+Dengan semangat Man Jadda Wajada, buku ini mengajarkan kerja keras dan keyakinan.
+</p>
+</div>
+
+<div class="produk">
+<img src="images/Dulce de Leche.jfif" alt="Dulce de Leche">
+<h2>Dulce de Leche</h2>
+<p class="harga">Rp239.900</p>
+<p class="deskripsi">
+Mengenal manisnya karamel susu khas Amerika Latin. 
+Dilengkapi cerita asal-usul dan inspirasi olahan yang menggugah selera.
+</p>
+</div>
+
+<div class="produk">
+<img src="images/Cinderella.jfif" alt="Cinderella">
+<h2>Cinderella</h2>
+<p class="harga">Rp259.900</p>
+<p class="deskripsi">
+Cerita klasik penuh pesan tentang kesabaran, kebaikan hati, dan harapan. 
+Dongeng yang selalu menginspirasi sepanjang masa.
+</p>
+</div>
+
+</section>
+
+<a href="index.html" class="kembali">← Kembali ke Beranda</a>
+
+</body>
+</html>
